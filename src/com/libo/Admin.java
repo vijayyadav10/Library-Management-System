@@ -1,6 +1,7 @@
 package com.libo;
 import java.util.Scanner;
 
+//Admin Entity
 public class Admin {
 
 	String Name;
