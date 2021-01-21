@@ -2,6 +2,8 @@ package com.libo;
 
 import java.util.Scanner;
 
+
+// this is the main class is know as bootstrap class
 public class App {
 
 	public static void main(String[] args) {
