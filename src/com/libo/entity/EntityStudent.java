@@ -12,7 +12,7 @@ public class EntityStudent {
 		this.id = id;
 	}
 
-	public Object SearchBookByName(Library lib) {
+	public Object SearchBookByName(LibraryImpl lib) {
 
 		Scanner sc = new Scanner(System.in);
 

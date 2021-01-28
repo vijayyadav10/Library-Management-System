@@ -2,9 +2,9 @@ package com.libo;
 
 import java.util.Scanner;
 
-import com.libo.entity.Admin;
+import com.libo.entity.AdminImpl;
 import com.libo.entity.EntityStudent;
-import com.libo.entity.Library;
+import com.libo.entity.LibraryImpl;
 
 public class App {
 
@@ -13,7 +13,7 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 		String password = null;
 
-		Library library = new Library();
+		LibraryImpl library = new LibraryImpl();
 
 		System.out.println("hello");
 
@@ -24,7 +24,7 @@ public class App {
 
 		while (choice > 0) {
 			if ("admin".equals(user_name)) {
-				Admin admin = new Admin("vijay", 1);
+				AdminImpl admin = new AdminImpl("vijay", 1);
 				switch (choice) {
 				case 1:
 					admin.addBookToShell(library);

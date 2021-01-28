@@ -2,12 +2,12 @@ package com.libo.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
+public class LibraryImpl {
 
 	private List<EntityBook> bookshell = new ArrayList<EntityBook>();
 	private List<EntityLoan> loan;
 	
-	public Library() {
+	public LibraryImpl() {
 		
 		bookshell.add(new EntityBook("java","cs","tom",100,20));
 	}

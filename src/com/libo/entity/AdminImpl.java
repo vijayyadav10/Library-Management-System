@@ -1,19 +1,21 @@
 package com.libo.entity;
 import java.util.Scanner;
 
-public class Admin {
+import com.libo.entity.interfaces.Admin;
+
+public class AdminImpl implements Admin{
 
 	String Name;
 	int id;
 
-	public Admin(String name, int id) {
+	public AdminImpl(String name, int id) {
 		this.Name = name;
 		this.id = id;
 	}
 
 	EntityBook book;
 
-	public void addBookToShell(Library lib) {
+	public void addBookToShell(LibraryImpl lib) {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Enter Book Details: Name, Subject Name, Author Name, NoOfPage, BookPrice ");
@@ -29,7 +31,7 @@ public class Admin {
 		lib.addBook(book);
 	}
 
-	public void getAllBooks(Library lib) {
+	public void getAllBooks(LibraryImpl lib) {
 		System.out.println("Books In the Shell" + lib.getBooks());
 	}
 
