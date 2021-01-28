@@ -1,4 +1,4 @@
-package com.libo;
+package com.libo.entity;
 import java.util.Scanner;
 
 public class Admin {

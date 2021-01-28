@@ -1,4 +1,4 @@
-package com.libo;
+package com.libo.entity;
 import java.util.List;
 import java.util.Scanner;
 

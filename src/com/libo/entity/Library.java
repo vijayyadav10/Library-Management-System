@@ -1,4 +1,4 @@
-package com.libo;
+package com.libo.entity;
 import java.util.ArrayList;
 import java.util.List;
 

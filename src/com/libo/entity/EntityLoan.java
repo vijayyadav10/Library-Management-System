@@ -1,4 +1,4 @@
-package com.libo;
+package com.libo.entity;
 
 public class EntityLoan {
 

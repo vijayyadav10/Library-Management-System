@@ -2,6 +2,10 @@ package com.libo;
 
 import java.util.Scanner;
 
+import com.libo.entity.Admin;
+import com.libo.entity.EntityStudent;
+import com.libo.entity.Library;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -9,7 +13,7 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 		String password = null;
 
-		Library lib = new Library();
+		Library library = new Library();
 
 		System.out.println("hello");
 
@@ -24,10 +28,10 @@ public class App {
 				Admin admin = new Admin("vijay", 1);
 				switch (choice) {
 				case 1:
-					admin.addBookToShell(lib);
+					admin.addBookToShell(library);
 					break;
 				case 2:
-					admin.getAllBooks(lib);
+					admin.getAllBooks(library);
 					break;
 				case 3:
 					return;
@@ -40,10 +44,9 @@ public class App {
 				EntityStudent student = new EntityStudent("vijay", 1);
 				switch (choice) {
 				case 1:
-					System.out.println(student.SearchBookByName(lib));
+					System.out.println(student.SearchBookByName(library));
 					break;
 				case 2:
-//					admin.getAllBooks(lib);
 					System.out.println("no books");
 					break;
 				case 3:
@@ -51,7 +54,7 @@ public class App {
 				}
 				System.out.println("1. Search Book By Name \n2.Get List Of Books \n3.Quite");
 
-				choice = sc.nextInt(); // add this
+				choice = sc.nextInt(); 
 
 			}
 
