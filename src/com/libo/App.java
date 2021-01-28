@@ -22,7 +22,6 @@ public class App {
 
 		int choice = sc.nextInt();
 
-
 		while (choice > 0) {
 			if ("admin".equals(user_name)) {
 				Admin admin = new Admin("vijay", 1);
@@ -54,7 +53,7 @@ public class App {
 				}
 				System.out.println("1. Search Book By Name \n2.Get List Of Books \n3.Quite");
 
-				choice = sc.nextInt(); 
+				choice = sc.nextInt();
 
 			}
 
